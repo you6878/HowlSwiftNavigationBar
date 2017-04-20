@@ -10,6 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBAction func NavigationButtonRight(_ sender: Any) {
+        
+        let alert = UIAlertController(title: "Mail", message: "도착한 메세지가 없습니다.", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "확인", style: UIAlertActionStyle.default, handler: nil))
+        
+        self.present(alert,animated: true,completion: nil)
+        
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
